@@ -48,9 +48,34 @@ a:hover {
     text-align: left;
   }
 }
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
 .container {
-  margin: 0 auto;
-  
+  /*margin: 0 auto;*/
+  max-width: 760px;
+  border: #fff solid 3px;
+  background: #00FFFF;  
+}
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+.imgs {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+/*fade in animation */
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadein 1s, ease-in 1 forwards;
 }
 #container {
   background: #0db5ba;
@@ -124,7 +149,8 @@ header {
 }
 
 .section-light{
-  background-color:#f4f4f4;
+  /*background-color:#f4f4f4;*/
+  background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
   color:#666;
 }
 
