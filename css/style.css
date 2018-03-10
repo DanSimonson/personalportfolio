@@ -19,6 +19,9 @@ h1 {
 h2 {
   font-family: 'Lobster', cursive;
 }
+h3 {
+  font-family: 'Lobster', cursive;
+}
 .container {
   /*margin: 0 auto;*/
   max-width: 760px;
@@ -33,7 +36,8 @@ h2 {
 }
 #para {
   color: #d3d3d3;
-  font-weight: 900;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
 }
 #text {
   color: #d3d3d3;
@@ -100,8 +104,8 @@ input#menu{
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  background-color: aliceblue;
-  transition-property: background-color;
+  color: skyblue;
+  transition-property: color;
   transition-duration: 1.5s;
   transition-timing-function: linear;
 }
@@ -184,7 +188,7 @@ header {
 }
 
 .pimg2{
-  background-image:url('../img/image2.jpg');
+  background-image:url('../img/blurry.jpg');
   min-height:450px;
   margin-bottom: 0;
   text-align: center;
@@ -201,8 +205,9 @@ header {
 }
 
 .pimg3{
-  background-image:url('../img/image3.jpg');
-  min-height:400px;
+  background-image:url('../img/taal.jpg');
+  min-height:500px;
+  padding-bottom: 100px;
 }
 
 .section{
@@ -212,18 +217,22 @@ header {
 }
 
 .section-light{
-  /*background-color:#f4f4f4;*/
-  background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
-  color:#666;
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  /*
+  background: linear-gradient(to bottom right,#667db6, #0082c8, #0082c8, #667db6);
+  background: linear-gradient(to bottom right,#00f260 , #0575e6);
+  color:#666;*/
 }
 
 .section-dark{
-  background-color: #fff;
+  background: linear-gradient(to bottom right, #3e5151, #decba4);
+  font-weight: bold;
   /*
   background-color:#282e34;
   color:#ddd;
   */
 }
+
 
 .ptext{
   position:absolute;
@@ -311,3 +320,42 @@ header {
   width: 100px;
 
 }
+/*contact section*/
+.header-title {
+  text-align: center;
+  padding-top: 20px;
+}
+/*section three*/
+.bigIcon {
+  font-size: 9em;
+  color:  #d5d5d5;
+}
+#social > li {
+  display: inline-block;
+}
+#social > li a:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+/*section three
+li {
+  display: inline-block;
+}
+
+li a:hover {
+  color: #FF0000;
+  text-decoration: none;
+}
+.bigIcon {
+  font-size: 9em;
+  color:  #000080;
+} 
+.fa-envelope-o {
+  color: #fff;
+}
+
+.fa-envelope-o:hover {
+  text-decoration: none;
+  color: #FF0000;
+}
+*/

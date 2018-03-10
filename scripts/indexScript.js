@@ -3,6 +3,10 @@ $( document ).ready(function() {
   const curren= document.querySelector('#current');
   const imgs = document.querySelectorAll('.imgs img')
   const opacity = 0.6;
+
+  //force load to top
+  $(this).scrollTop(0);
+
   //thumbnail functionality
   imgs.forEach(img => img.addEventListener('mouseover', imgClick));
 
@@ -69,6 +73,21 @@ $( document ).ready(function() {
 changeText();
 //Animate every ... seconds
 setInterval(changeText, 36000);
+
+ //add bigIcons animation classes on mouseover
+ $(".bigIcon").on('mouseover', function () {
+  $("a.fa-github.bigIcon").addClass('animated swing infinite');
+  $("a.fa-linkedin.bigIcon").addClass('animated wobble infinite');
+  $("a.fa-facebook.bigIcon").addClass('animated bounce infinite');
+  $("a.fa-twitter.bigIcon").addClass('animated jello infinite');
+});
+//remove bigIcons animation classes on mouseout
+$(".bigIcon").on('mouseout', function () {
+  $("a.fa-github.bigIcon").removeClass('animated swing infinite');
+  $("a.fa-linkedin.bigIcon").removeClass('animated wobble infinite');
+  $("a.fa-facebook.bigIcon").removeClass('animated bounce infinite');
+  $("a.fa-twitter.bigIcon").removeClass('animated jello infinite');
+});
 
   $(function() {
     // Smooth Scrolling
