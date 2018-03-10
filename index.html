@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dan Simonson Website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <!-- Custom styles for this template /// <link rel="stylesheet" href="animate.css"-->
@@ -16,14 +18,28 @@
 </head>
 <!--<body style="background-image: url('img/webDev.jpg')">-->
   <body>
-  <div id="container">
+  <!--<div id="container">-->
     <header>
       <!--<div class='container'>-->
         <div class='logo'>
           <!-- Brand -->
-          <img src='img/mariposaImage.jpg'>
-          <!--<span class="navbar-brand"><img src='img/mariposaImage.jpg'></span>-->
+          <!--<img src='img/mariposaImage.jpg'>-->
+          <span class="navbar-brand"><img src='img/mariposaImage.jpg'></span>
+          <div class="nav">
+            <input type="checkbox" id="menu" />
+            <label for="menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+          </div>
         </div>
+        <!--
         <div class='nav'>
           <ul>
             <li><a href="">Home</a></li>
@@ -33,7 +49,7 @@
         </div>
       <!--</div>-->
     </header>
-  </div>
+  <!--</div>-->
   <div id="banner">
     <!--flip card -->
     <div class='container-fluid' id='card' style="background-image: url('img/webDev.jpg')">
@@ -45,7 +61,7 @@
               <div class="flip-container">
                   <div class="front">
                     <h3>FRONT-END DEVELOPMENT</h3>
-                    <p>I create responsive websites that offer a rewarding user experience and richly interactive functionality. I have extensive knowledge of JavaScript, HTML, and CSS
+                    <p>I create responsive websites that offer a rewarding user experience and richly interactive functionality. I have extensive knowledge of JavaScript, HTML, and CSS.
                       I have experience with frameworks like JQUERY, REACT, Bootstrap and tools like GitHub and Visual Studio Code </p>
                     <br>
                     <button type="button" class="btn btn-primary">Continue...</button>
@@ -70,15 +86,16 @@
   <div id="content">
     <div class="pimg1">
         <div class="ptext">
-          <!--<span class="border">
-            Parallax Website
-          </span>-->
+          <p id='call-to-action'>I craft beautiful, functional websites and applications</p>
+          <span class="border">
+            Start Creating 
+          </span>
         </div>
       </div>
     
       <section class="section section-light" id='projects'>
         <h1>Projects</h1>
-          <div class="container">
+          <div class="container" id='project-border'>
               <div class="main-img">
                 <img src="img/calculator.jpg" id="current">
               </div>
@@ -89,12 +106,10 @@
                 <a target="_blank" href='https://dansimonson.github.io/wikiviewer/'><img src="img/wikipedia.jpg"></a>
                 <a target="_blank" href='https://dansimonson.github.io/twitchtv/'><img src="img/twitch.png"></a>
                 <a target="_blank" href='https://dansimonson.github.io/localweather/'><img src="img/weather.jpg"></a> 
-                <a target="_blank" href='https://dansimonson.github.io/pomodoro/'><img src="img/pomodoro.png"></a>
+                <a target="_blank" href='https://dansimonson.github.io/pomodoro/'><img src="img/pomodoro.jpg"></a>
                 <a target="_blank" href='https://dansimonson.github.io/tictactoe/'><img src="img/tictactoe.jpg"></a>
                 <a target="_blank" href='https://dansimonson.github.io/randomquotemachine/#'><img src="img/quote.jpg"></a>
                 <a target="_blank" href='https://todolistforprocrastinators.herokuapp.com/todo'><img src="img/todoList.jpg"></a>
-
-                https://todolistforprocrastinators.herokuapp.com/todo
               </div>
             </div>
         <!--<h2>Section One</h2>
@@ -105,18 +120,49 @@
       </section>
     
       <div class="pimg2">
-        <div class="ptext">
+          <div class='row'>
+              <div class='col-sm'>
+                  <p id='para'>My Philosophy</p>
+                  <p id='text'>People are what they repeatedly do. Excellence, therefore, is not an act, but a habit.</p>
+              </div>
+  
+        <!--<div class="ptext">
           <span class="border trans">
             Image Two Text
           </span>
-        </div>
+        </div>-->
       </div>
     
-      <section class="section section-dark">
-        <h2>Section Two</h2>
+      <section class="section section-dark" id='about'>
+          <div class="row">
+          <div class="col-md-8">
+              <h2>About Me</h2>
+              <p>Whether you are just starting out from scratch or want to give your site a total makeover,
+              I offer quality and cost effective web development focusing on cutting edge solutions. I provide a modern approach that will set you apart with a fully responsive website
+              that has awesome features to meet all the requirements for each client.</p>
+            </div>
+            <div class="col-md-4">
+              <img src='img/nodejs.png' id='node'>
+              <img src='img/bootstrapLogo.jpg' id='boot'>
+            </div>
+          </div>
+      
+          <div class='row'>
+            <div class='col-md-4'>
+              <img src='img/hcj.png' id='hcj'>
+            </div>
+            <div class='col-md-8'>
+              <p>Being passionate about developing functional and artistic websites, I combine creativity with a complete understanding of the user experience to develop an impressive and eye-catching
+              online experience. </p>
+              <p>To present results that meet all requirements, it is necessary to have experience in both front and back end development. I am a full-stack web developer who
+              can offer both front and back end development support with technologies like HTML5, CSS3, Twitter Bootstrap, JavaScript, Node.js, Express.js, Nodemailer and more.</p>
+            </div>
+          </div>
+        </div>
+        <!--<h2>Section Two</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-        </p>
+        </p>-->
       </section>
     
       <div class="pimg3">
@@ -133,14 +179,14 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
         </p>
       </section>
-    
+    <!--
       <div class="pimg1">
         <div class="ptext">
           <span class="border">
             Traversy Media
           </span>
         </div>
-      </div>
+      </div>-->
   </div>
   <!-- Bootstrap core JavaScript
     ================================================== -->

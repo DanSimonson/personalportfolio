@@ -28,6 +28,48 @@ $( document ).ready(function() {
     $(this).toggleClass('flipped');
   });
 
+  //check for menu click and toggle open and close icons accordingly
+  $( "#menu" ).click(function() {
+    //alert( "Handler for .click() called." );
+    if($("label").find($(".fa")).hasClass('fa fa-bars')){
+      //console.log('found icon');
+      $("label").find($(".fa")).removeClass('fa fa-bars').addClass('fa fa-times-circle-o');
+    } else {
+      $("label").find($(".fa")).removeClass('fa fa-times-circle-o').addClass('fa fa-bars');
+    }
+
+  });
+ 
+ function changeText() {
+  let text = document.getElementById('text');
+  
+  setTimeout( function(){
+    text.innerHTML = 'Every once in awhile, a new technology, an old problem, and a big idea turn into innovation.';
+  }, 5000);
+  setTimeout( function(){
+    text.innerHTML = "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.";
+  }, 10000);
+  setTimeout( function(){
+    text.innerHTML = "If I can't explain it to a 6-year old, I don't understand it myself.";
+  }, 15000);
+  setTimeout( function(){
+    text.innerHTML = "My job is to connect to people, to interact with them in a way that leaves them more interested.";
+  }, 20000);
+  setTimeout( function(){
+    text.innerHTML = "People are what they repeatedly do. Excellence, therefore, is not an act, but a habit.";
+  }, 25000);
+  setTimeout( function(){
+    text.innerHTML = "A satisfied customer is the best business strategy of all.";
+  }, 30000);
+  setTimeout( function(){
+    text.innerHTML = "He who knows best knows how little he knows";
+  }, 35000);
+}
+//call animation
+changeText();
+//Animate every ... seconds
+setInterval(changeText, 36000);
+
   $(function() {
     // Smooth Scrolling
     $('a[href*="#"]:not([href="#"])').click(function() {
