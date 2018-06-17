@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
   <!-- Custom styles for this template /// <link rel="stylesheet" href="animate.css"-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
@@ -17,203 +19,265 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <!--<body style="background-image: url('img/webDev.jpg')">-->
-  <body>
-    <header>
-        <div class='logo'>
-          <!-- Brand -->
-          <!--<img src='img/mariposaImage.jpg'>-->
-          <span class="navbar-brand"><img src='img/mariposaImage.jpg'></span>
-          <div class="nav">
-            <input type="checkbox" id="menu" />
-            <label for="menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#social-media">Social Media</a></li>
-                    <li><a href="https://dansimonson.github.io/blog/">Blog</a></li>
-                </ul>
-            </div>
-          </div>
+
+<body>
+  <header>
+    <div class='logo'>
+      <!-- Brand -->
+      <!--<img src='img/mariposaImage.jpg'>-->
+      <span class="navbar-brand">
+        <img src='img/mariposaImage.jpg'>
+      </span>
+      <div class="nav">
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </label>
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#social-media">Social Media</a>
+            </li>
+            <li>
+              <a href="https://dansimonson.github.io/blog/">Blog</a>
+            </li>
+          </ul>
         </div>
-      
-    </header>
+      </div>
+    </div>
+
+  </header>
   <div id="banner">
     <!--flip card -->
     <div class='container-fluid' id='card' style="background-image: url('img/webDev.jpg')">
-      > 
-        <div class='row text-center'>
-          <div class='col'>          
-          </div>
-          <div class='col'>
-              <div class="flip-container">
-                  <div class="front">
-                    <h3>FRONT-END DEVELOPMENT</h3>
-                    <p>I create responsive websites that offer a rewarding user experience and richly interactive functionality. I have extensive knowledge of JavaScript, HTML, and CSS.
-                      I have experience with frameworks like JQUERY, REACT, Bootstrap and tools like GitHub and Visual Studio Code </p>
-                    <br>
-                    <button type="button" class="btn btn-primary">Continue...</button>
-    
-                  </div>
-                  <div class="back">
-                    <h3>BACK-END DEVELOPMENT</h3>
-                    <P>I am a Full-Stack Developer with experience using server side framework Express.js with Node.js and MongoDB. Along with providing functionality,
-                    I can optimize applications for speed and efficiency.</P>
-                    <br>
-                    <button type="button" class="btn btn-primary">Continue...</button>
-    
-                  </div>
-                </div>
-          </div>
-          <div class='col'>         
+      >
+      <div class='row text-center'>
+        <div class='col'>
+        </div>
+        <div class='col'>
+          <div class="flip-container">
+            <div class="front">
+              <h3>FRONT-END DEVELOPMENT</h3>
+              <p>I create responsive websites that offer a rewarding user experience and richly interactive functionality. I
+                have extensive knowledge of JavaScript, HTML, and CSS. I have experience with frameworks like JQUERY, REACT,
+                Bootstrap and tools like GitHub and Visual Studio Code </p>
+              <br>
+              <button type="button" class="btn btn-primary">Continue...</button>
+
+            </div>
+            <div class="back">
+              <h3>BACK-END DEVELOPMENT</h3>
+              <P>I am a Full-Stack Developer with experience using server side framework Express.js with Node.js and MongoDB.
+                Along with providing functionality, I can optimize applications for speed and efficiency.</P>
+              <br>
+              <button type="button" class="btn btn-primary">Continue...</button>
+
+            </div>
           </div>
         </div>
+        <div class='col'>
+        </div>
       </div>
+    </div>
   </div>
-  
+
   <div id="content">
     <div class="pimg1">
-        <div class="ptext">
-          <p id='call-to-action'>I craft beautiful, functional websites and applications</p>
-          <a href="#contact"><span class="border">
-            Start Creating 
-          </span></a>
+      <div class="ptext">
+        <p id='call-to-action'>I craft beautiful, functional websites and applications</p>
+        <a href="#contact">
+          <span class="border">
+            Start Creating
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <section class="section section-light" id='projects'>
+      <h1>Projects</h1>
+      <div class="container" id='project-border'>
+        <div class="main-img">
+          <img src="img/calculator.jpg" id="current">
+        </div>
+
+        <div class="imgs">
+          <a target="_blank" href='https://dansimonson.github.io/calculator/'>
+            <img src="img/calculator.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/simongame/'>
+            <img src="img/simon.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/wikiviewer/'>
+            <img src="img/wikipedia.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/twitchtv/'>
+            <img src="img/twitch.png">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/localweather/'>
+            <img src="img/weather.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/pomodoro/'>
+            <img src="img/pomodoro.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/tictactoe/'>
+            <img src="img/tictactoe.jpg">
+          </a>
+          <a target="_blank" href='https://dansimonson.github.io/randomquotemachine/#'>
+            <img src="img/quote.jpg">
+          </a>
+          <a target="_blank" href='https://todolistforprocrastinators.herokuapp.com/todo'>
+            <img src="img/todoList.jpg">
+          </a>
         </div>
       </div>
-    
-      <section class="section section-light" id='projects'>
-        <h1>Projects</h1>
-          <div class="container" id='project-border'>
-              <div class="main-img">
-                <img src="img/calculator.jpg" id="current">
-              </div>
-            
-              <div class="imgs">
-                <a target="_blank" href='https://dansimonson.github.io/calculator/'><img src="img/calculator.jpg"></a>
-                <a target="_blank" href='https://dansimonson.github.io/simongame/'><img src="img/simon.jpg"></a>               
-                <a target="_blank" href='https://dansimonson.github.io/wikiviewer/'><img src="img/wikipedia.jpg"></a>
-                <a target="_blank" href='https://dansimonson.github.io/twitchtv/'><img src="img/twitch.png"></a>
-                <a target="_blank" href='https://dansimonson.github.io/localweather/'><img src="img/weather.jpg"></a> 
-                <a target="_blank" href='https://dansimonson.github.io/pomodoro/'><img src="img/pomodoro.jpg"></a>
-                <a target="_blank" href='https://dansimonson.github.io/tictactoe/'><img src="img/tictactoe.jpg"></a>
-                <a target="_blank" href='https://dansimonson.github.io/randomquotemachine/#'><img src="img/quote.jpg"></a>
-                <a target="_blank" href='https://todolistforprocrastinators.herokuapp.com/todo'><img src="img/todoList.jpg"></a>
-              </div>
-            </div>
-      </section>
-    
-      <div class="pimg2">
-          <div class='row'>
-              <div class='col-sm'>
-                  <p id='para'>My Philosophy</p>
-                  <p id='text'>People are what they repeatedly do. Excellence, therefore, is not an act, but a habit.</p>
-              </div>
+    </section>
+
+    <div class="pimg2">
+      <div class='row'>
+        <div class='col-sm'>
+          <p id='para'>My Philosophy</p>
+          <p id='text'>People are what they repeatedly do. Excellence, therefore, is not an act, but a habit.</p>
+        </div>
       </div>
-    
+
       <section class="section section-dark" id='about'>
-          <div class="row">
+        <div class="row">
           <div class="col-md-8">
-              <h2>About Me</h2>
-              <p>Whether you are just starting out from scratch or want to give your site a total makeover,
-              I offer quality and cost effective web development focusing on cutting edge solutions. I provide a modern approach that will set you apart with a fully responsive website
-              that has awesome features to meet all the requirements for each client.</p>
-            </div>
-            <div class="col-md-4">
-              <img src='img/nodejs.png' id='node'>
-              <img src='img/bootstrapLogo.jpg' id='boot'>
-            </div>
+            <h2>About Me</h2>
+            <p>Whether you are just starting out from scratch or want to give your site a total makeover, I offer quality and
+              cost effective web development focusing on cutting edge solutions. I provide a modern approach that will set
+              you apart with a fully responsive website that has awesome features to meet all the requirements for each client.</p>
           </div>
-      
-          <div class='row'>
-            <div class='col-md-4'>
-              <img src='img/hcj.png' id='hcj'>
-            </div>
-            <div class='col-md-8'>
-              <p>Being passionate about developing functional and artistic websites, I combine creativity with a complete understanding of the user experience to develop an impressive and eye-catching
-              online experience. </p>
-              <p>To present results that meet all requirements, it is necessary to have experience in both front and back end development. I am a full-stack web developer who
-              can offer both front and back end development support with technologies like HTML5, CSS3, Twitter Bootstrap, JavaScript, Node.js, Express.js and more.</p>
-            </div>
+          <div class="col-md-4">
+            <img src='img/nodejs.png' id='node'>
+            <img src='img/bootstrapLogo.jpg' id='boot'>
           </div>
-        </div>        
-      </section>
-    
-      <div class="pimg3" id='contact'>
-          <div class="row">
-              <div class="col-sm-4">
-              </div>
-              <div class="col-sm-4">
-                <ul class="hideShow" style="display: none">
-                <li><a href="https://github.com/DanSimonson/" target="_blank" class="fa fa-github bigIcon"></a></li>
-                <li><a href="https://www.linkedin.com/in/dansimonsonallthingsjavascript/" target="_blank" class="fa fa-linkedin bigIcon"></a></li>
-                <li><a href="https://www.facebook.com/simonsondan" target="_blank" class="fa fa-facebook bigIcon"></a></li>
-                <li><a href="https://twitter.com/simonsondan?lang=en" target="_blank" class="fa fa-twitter bigIcon"></a></li>
-                </ul>
-              </div>
-              <div class="col-sm-4">
-              </div>
-            </div>
-          
-            <div class="container animated fadeIn">
-          
-                <h1 class="header-title"> Contact </h1>
-                <div id='line'>
-                    <hr style="width:100%; height:1px; background-color: #cce1ec; border:none;" />
-                <br>
-                </div>
-                  <div class="row">
-                  <!--<div class="col-sm-12" id="parent">-->
-                      <div class="col-sm-6">
-                      <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15473.42605561596!2d120.97317672783481!3d14.173885045741837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd79612ab7075d%3A0x59331b56ed8d500!2sPaligawan%2C+Silang%2C+Cavite!5e0!3m2!1sen!2sph!4v1510210895283"  allowfullscreen></iframe>
-                      </div>
-                
-                      <div class="col-sm-6">
-                        <form action="http://formspree.io/simondvanwinkle@gmail.com" class="contact-form" method="post">
-                
-                            <div class="form-group">
-                              <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
-                            </div>
-                
-                
-                            <div class="form-group form_left">
-                              <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email" required="">
-                            </div>
-                
-                          <div class="form-group">
-                          <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
-                          <br>
-                            <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
-                          </div>
-                         </form>
-                      </div>
-                    <!--</div>-->
-                </div>
+        </div>
+
+        <div class='row'>
+          <div class='col-md-4'>
+            <img src='img/hcj.png' id='hcj'>
           </div>
+          <div class='col-md-8'>
+            <p>Being passionate about developing functional and artistic websites, I combine creativity with a complete understanding
+              of the user experience to develop an impressive and eye-catching online experience. </p>
+            <p>To present results that meet all requirements, it is necessary to have experience in both front and back end
+              development. I am a full-stack web developer who can offer both front and back end development support with
+              technologies like HTML5, CSS3, Twitter Bootstrap, JavaScript, Node.js, Express.js and more.</p>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="pimg3" id='contact'>
+      <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <ul class="hideShow" style="display: none">
+            <li>
+              <a href="https://github.com/DanSimonson/" target="_blank" class="fa fa-github bigIcon"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dansimonsonmariposaweb/" target="_blank" class="fa fa-linkedin bigIcon"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/simonsondan" target="_blank" class="fa fa-facebook bigIcon"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/simonsondan?lang=en" target="_blank" class="fa fa-twitter bigIcon"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+        </div>
       </div>
-    
-      <section class="section section-dark" id='social-media'>
-              <h3>Connect with me on social media</h3>
-              <ul id='social'>
-                <li><a href="https://github.com/DanSimonson/" target="_blank" class="fa fa-github bigIcon"></a></li>
-                <li><a href="https://www.linkedin.com/in/dansimonsonallthingsjavascript/" target="_blank" class="fa fa-linkedin bigIcon"></a></li>
-                <li><a href="https://www.facebook.com/simonsondan" target="_blank" class="fa fa-facebook bigIcon"></a></li>
-                <li><a href="https://twitter.com/simonsondan?lang=en" target="_blank" class="fa fa-twitter bigIcon"></a></li>
-              </ul>
-      </section>
+
+      <div class="container animated fadeIn">
+
+        <h1 class="header-title"> Contact </h1>
+        <div id='line'>
+          <hr style="width:100%; height:1px; background-color: #cce1ec; border:none;" />
+          <br>
+        </div>
+        <div class="row">
+          <!--<div class="col-sm-12" id="parent">-->
+          <div class="col-sm-6">
+            <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15473.42605561596!2d120.97317672783481!3d14.173885045741837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd79612ab7075d%3A0x59331b56ed8d500!2sPaligawan%2C+Silang%2C+Cavite!5e0!3m2!1sen!2sph!4v1510210895283"
+              allowfullscreen></iframe>
+          </div>
+
+          <div class="col-sm-6">
+            <form action="http://formspree.io/simondvanwinkle@gmail.com" class="contact-form" method="post">
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+              </div>
+
+
+              <div class="form-group form_left">
+                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email" required="">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..."
+                  required=""></textarea>
+                <br>
+                <button class="btn btn-default btn-send">
+                  <span class="glyphicon glyphicon-send"></span> Send </button>
+              </div>
+            </form>
+          </div>
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-dark" id='social-media'>
+      <h3>Connect with me on social media</h3>
+      <ul id='social'>
+        <li>
+          <a href="https://github.com/DanSimonson/" target="_blank" class="fa fa-github bigIcon"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/dansimonsonmariposaweb/" target="_blank" class="fa fa-linkedin bigIcon"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/simonsondan" target="_blank" class="fa fa-facebook bigIcon"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/simonsondan?lang=en" target="_blank" class="fa fa-twitter bigIcon"></a>
+        </li>
+      </ul>
+    </section>
   </div>
   <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="scripts/indexScript.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="scripts/indexScript.js"></script>
 
-  
+
 </body>
+
 </html>
 
 
